@@ -1,6 +1,6 @@
 students_number = int(input())
 lectures_number = int(input())
-additional_bonus  = int(input())
+additional_bonus = int(input())
 max_attendance = 0
 
 for student in range(students_number):
