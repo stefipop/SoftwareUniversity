@@ -1,7 +1,6 @@
 text = input().replace(" ","")
 result = {char: text.count(char) for char in text}
-# default = 0
-# result = dict.fromkeys(text, default)
+# result = dict.fromkeys(text, 0)
 #
 # for letter in text:
 #     result[letter] += 1

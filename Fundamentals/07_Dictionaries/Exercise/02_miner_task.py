@@ -10,5 +10,5 @@ while data != "stop":
     result[data] = result.get(data, 0) + quantity
     data = input()
 
-for k, v in result.items():
-    print(f"{k} -> {v}")
+for key, value in result.items():
+    print(f"{key} -> {value}")
