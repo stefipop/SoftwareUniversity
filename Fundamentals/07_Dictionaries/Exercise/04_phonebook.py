@@ -6,9 +6,7 @@ while "-" in data:
     phonebook[person] = phone
     data = input()
 
-num = int(data)
-
-for _ in range(num):
+for _ in range(int(data)):
     name = input()
     if name in phonebook:
         print(f"{name} -> {phonebook[name]}")

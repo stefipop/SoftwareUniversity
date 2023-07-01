@@ -8,6 +8,7 @@ while data != "End":
     if id_num not in companies[company]:
         companies[company].append(id_num)
     data = input()
+
 for k, v in companies.items():
     print(k)
     for employee in v:

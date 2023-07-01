@@ -7,9 +7,8 @@ result = {}
 while info != "end":
     course, student = info.split(" : ")
     if course not in result:
-        result[course] = [student]
-    else:
-        result[course].append(student)
+        result[course] = []
+    result[course].append(student)
     # result[course].append(student)
     info = input()
 
