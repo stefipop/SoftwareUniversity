@@ -1,10 +1,9 @@
 user_input = input()
-text = ""
-last_chr = ""
+text = user_input[0]
 
 for ch in user_input:
-    if ch != last_chr:
-        text += ch
-        last_chr = ch
+    if ch == text[-1]:
+        continue
+    text += ch
 
 print(text)
