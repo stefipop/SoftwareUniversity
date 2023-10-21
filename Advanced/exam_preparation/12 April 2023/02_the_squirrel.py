@@ -15,11 +15,11 @@ squirrel_row, squirrel_col = 0, 0
 
 # Read the field and find the squirrel's initial position
 for r in range(size):
-    row = list(input())
-    field.append(row)
-    if "s" in row:
+    rows = list(input())
+    field.append(rows)
+    if "s" in rows:
         squirrel_row = r
-        squirrel_col = row.index("s")
+        squirrel_col = rows.index("s")
 
 while commands:
     direction = commands.popleft()
