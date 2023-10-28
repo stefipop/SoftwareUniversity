@@ -1,4 +1,4 @@
-from task import Task
+from project.task import Task
 
 
 class Section:
@@ -19,7 +19,7 @@ class Section:
                 return f"Completed task {task_name}"
         return f"Could not find task with the name {task_name}"
 
-    def clean_section(self):
+    def clean_section(self) -> str:
         count = 0
         for task in self.tasks:
             if Task.completed:

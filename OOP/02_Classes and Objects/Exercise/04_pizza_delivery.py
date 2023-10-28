@@ -49,7 +49,7 @@ class PizzaDelivery:
 # print(margarita.make_order())
 # print(margarita.add_extra('cheese', 1, 1))
 
-margarita = PizzaDelivery('Margarita', 12, {'cheese': 2, 'tomatoes': 1})
-print(margarita.make_order())
-margarita.add_extra('mozzarella', 1, 0.5)
-margarita.remove_ingredient('mozzarella', 1, 2)
+# margarita = PizzaDelivery('Margarita', 12, {'cheese': 2, 'tomatoes': 1})
+# print(margarita.make_order())
+# margarita.add_extra('mozzarella', 1, 0.5)
+# margarita.remove_ingredient('mozzarella', 1, 2)
