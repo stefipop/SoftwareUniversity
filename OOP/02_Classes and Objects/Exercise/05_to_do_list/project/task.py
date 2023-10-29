@@ -1,10 +1,12 @@
+from typing import List
+
 class Task:
-    comments = []
-    completed = False
 
     def __init__(self, name: str, due_date: str):
         self.name = name
         self.due_date = due_date
+        self.comments: List[str]= []
+        self.completed = False
 
     def change_name(self, new_name: str) -> str:
         if new_name == self.name:
@@ -20,12 +22,12 @@ class Task:
         return self.due_date
 
     def add_comment(self, comment: str) -> None:
-        Task.comments.append(comment)
+        self.comments.append(comment)
 
     def edit_comment(self, comment_number: int, new_comment: str) -> str:
-        if 0 <= comment_number < len(Task.comments):
-            Task.comments[comment_number] = new_comment
-            return ", ".join(Task.comments)
+        if 0 <= comment_number < len(self.comments):
+            self.comments[comment_number] = new_comment
+            return ", ".join(self.comments)
 
         return "Cannot find comment."
 
